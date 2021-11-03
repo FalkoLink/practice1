@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <title>IT Academy</title>
+    <link rel="icon" type="image/png" href="https://eduma.thimpress.com/wp-content/themes/eduma-child-landingpage/assets/images/favicon.png">
+</head>
+<body>
+    <header class="position-relative">
+
+<!--Navbar-->
+        <nav id="navbar_">
+            <div class="container">
+                <div class="row">
+                    <div class="d-none col-lg-12 col-xl-9 d-md-flex justify-content-center justify-content-xl-start">
+                        <ul class="d-flex align-items-center">
+                            <li class="me-lg-5 me-4"><a href="#"><img src="img/logo-eduma.png" alt="LOGO"></a></li>
+                            <li class="ms-lg-5 me-lg-5 ms-4 me-4"><a href="#" class="link-light">HOME</a></li>
+                            <li class="me-lg-5 me-4"><a href="#" class="link-light">LIVE DEMO</a></li>
+                            <li class="me-lg-5 me-4"><a href="#" class="link-light">ADD-ONS</a></li>
+                            <li class="me-lg-5 me-4"><a href="#" class="link-light">SUPPORT</a></li>
+                            <li class=""><a href="#" class="link-light">WHAT'S NEW</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 d-flex justify-content-between d-md-none">
+                        <a href="#"><img src="img/logo-eduma.png" alt="LOGO" class="img-fluid"></a>
+                        <div class="d-flex align-items-center">
+                            <a href="#"><i class="d-md-none icon-basket text-light fs-1 me-2"></i></a>
+                            <div id="menu" onclick="menuFunction(this)">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none col-xl-3 d-xl-flex justify-content-end" >
+                        <a href="#" class="btn btn-dark px-5 py-3 fw-bold"><i class="icon-basket">  </i>BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+<!--Preview-->
+        <div class="preview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-md-3 col-sm-12 d-flex justify-content-center d-md-block">
+                        <img src="img/text-bg-eduma.png" id="One" alt="One" class="img-fluid">
+                    </div>
+                    <div class="col-xxl-4 col-md-7 col-sm-12 text-center text-md-start pt-xl-4">
+                        <p class="text-light fs-3">The best for online education <br><span id="called">WordPress <br id="br"> LMS Theme</span></p>
+                        <br>
+                        <a href="#" class="btn btn-light bg-transparent text-uppercase mx-auto mx-md-0 fw-bold shadow-lg"><span>buy eduma now</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container" id="laptop">
+            <div class="row">
+                <div class="col-xl-2  d-none d-xl-block">
+                    <img src="img/tree-eduma.png" alt="Tree" class="img-fluid">
+                </div>
+                <div class="col-xl-9 col-md-12 text-end">
+                    <img src="img/laptop-eduma.png" alt="Laptop" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!--Menu-->
+    <nav id="menu_nav" class="position-fixed top-0 pt-5">
+        <ul>
+            <li><a href="#" class="link-light fw-normal d-inline-block mb-3">Home</a></li>
+            <li><a href="#" class="link-light fw-normal d-inline-block mb-3">Live Demo</a></li>
+            <li><a href="#" class="link-light fw-normal d-inline-block mb-3">Add-Ons</a></li>
+            <li><a href="#" class="link-light fw-normal d-inline-block mb-3">Support</a></li>
+            <li><a href="#" class="link-light fw-normal d-inline-block">What`s New</a></li>
+        </ul>
+    </nav>
+
+<!--Plugin-->
+    <section>
+        <div class="row">
+            <div class="col-12">
+
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        //navbar scroll
+        window.onscroll = function() {myFunction()};
+
+        let navbar = document.getElementById("navbar_");
+
+        let sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            navbar.classList.add("sticky");
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+
+        //menu open
+        let menu = document.getElementById("menu_nav");
+        function menuFunction(x) {
+            x.classList.toggle("change");
+            menu.classList.toggle("menu_open");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.container{
+    max-width: 1730px;
+}
+/*Navbar*/
+header{
+    height: 1200px;
+    background-image: url(https://eduma.thimpress.com/wp-content/themes/eduma-child-landingpage/assets/images/bg-home-eduma.jpg);
+    background-position: 25% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+#navbar_{
+    background: rgba(255, 137, 6, 0);
+    position: fixed;
+    top: 0;
+    padding: 48px 0;
+    width: 100%;
+    transition: .3s all ease;
+    z-index: 100;
+}
+.sticky  {
+    background: rgba(255, 137, 6, 1) !important;
+    padding: 16px 0 !important;
+}
+header nav ul a::after{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 2px;
+    height: 2px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: .3s all ease-in;
+}
+header nav ul a:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+#navbar_ #menu {
+    cursor: pointer;
+}
+#navbar_ #menu div{
+    background: #fff;
+}
+#menu_nav{
+    width: 275px;
+    height: 100%;
+    background: #222;
+    z-index: 101;
+    transform: translate( -275px);
+    visibility: hidden;
+}
+.menu_open{
+    transform: translate(0,0) !important;
+    visibility: visible !important;
+}
+#menu_nav a:hover{
+    color: #ffb606;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/*Preview*/
+.preview{
+    padding: 290px 0 0;
+}
+#called{
+    font-size: 70px;
+    font-weight: bolder;
+    text-shadow: 3px 3px rgba(0,0,0,.1),0 8px 13px rgba(0,0,0,.1),0 18px 23px rgba(0,0,0,.1);
+}
+.preview a{
+    position: relative;
+    height: 70px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+}
+.preview a::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 5px;
+    background: #fff;
+    transition: 0.5s all ease;
+}
+.preview a:hover::before{
+    width: 100%;
+}
+.preview a span{
+    position: absolute;
+}
+.preview a:hover{
+    color: #fe9b06;
+}
+#laptop{
+    position: absolute;
+    bottom: -150px;
+}
+
+@media (max-width: 768px) {
+    #One{
+        width: 100px;
+        position: relative;
+        left: -20px;
+    }
+    .preview{
+        padding: 120px 0 30px;
+    }
+    .preview a{
+        height: 50px;
+        width: 200px;
+    }
+    #br{
+        display: none;
+    }
+    #called{
+        font-size: 40px;
+    }
+    header{
+        background-position: 0 0;
+        height: 800px;
+        overflow: hidden;
+        margin: 0;
+    }
+    #navbar_{
+        padding: 10px 0;
+    }
+    #laptop{
+        position: static;
+    }
+    .sticky{
+        padding: 10px 0 !important;
+    }
+
+}
