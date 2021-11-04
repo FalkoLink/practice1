@@ -12,7 +12,7 @@ a{
 /*Navbar*/
 header{
     height: 1200px;
-    background-image: url(https://eduma.thimpress.com/wp-content/themes/eduma-child-landingpage/assets/images/bg-home-eduma.jpg);
+    background-image: url("../img/bg-home-eduma.jpg");
     background-position: 25% 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,6 +129,7 @@ header nav ul a:hover::after{
     bottom: -150px;
 }
 
+/*Header @media*/
 @media (max-width: 768px) {
     #One{
         width: 100px;
@@ -163,5 +164,36 @@ header nav ul a:hover::after{
     .sticky{
         padding: 10px 0 !important;
     }
+}
 
+/*Plugin*/
+#plugin{
+    background: url("../img/bg-home-eduma-02.png") top center/ cover no-repeat;
+    padding: 50px 0 38px;
+}
+#plugin h1{
+    font-size: 55px;
+}
+#plugin p{
+    font-size: 20px;
+    font-weight: 600;
+}
+#plugin .line{
+    content: "";
+    display: block;
+    background: #ffb606;
+    width: 150px;
+    height: 5px;
+}
+#plugin .plugin_icon img{
+    border-radius: 20px;
+}
+#plugin .plugin_sub a{
+    font-weight: 600;
+    color: #000;
+    opacity: 0.1;
+    transition: .3s opacity ease;
+}
+#plugin .plugin_box:hover a{
+    opacity: 1;
 }
