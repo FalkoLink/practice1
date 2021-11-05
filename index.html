@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" href="https://eduma.thimpress.com/wp-content/themes/eduma-child-landingpage/assets/images/favicon.png">
 </head>
 <body>
-    <header class="position-relative">
+    <header>
 
 <!--Navbar-->
         <nav id="navbar_">
@@ -159,6 +159,83 @@
         </div>
     </section>
 
+<!--Video_block-->
+    <section id="video_block">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="video_picture" class="video_box p-md-4">
+                        <img src="img/bg-video.jpg" alt="bg-video" class="img-fluid" width="100%">
+                        <div id="control">
+                            <div id="play" onclick="playVideo()"><img src="img/white-play-icon-png-6.png" alt="Play" width="100%"></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div id="video" class="video_box off">
+                        <video controls>
+                            <source src="https://eduma.thimpress.com/demo-1/wp-content/uploads/sites/89/2020/12/Eduma-Preview.mp4" type='video/mp4'>
+                            Тег video не поддерживается вашим браузером.
+                        </video>
+                    </div>
+                </div>
+            </div>
+<!--Number_one-->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img id="one2" src="img/number-one.png" alt="NumberOne" class="img-fluid">
+                    <h1 class="fw-bolder my-4">Selling Education Theme</h1>
+                    <div id="stars">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+<!--Item_block-->
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-12 px-3 d-inline-flex">
+                    <div class="item">
+                        <div class="item_box">
+                            <img src="img/icon-1.png" alt="icon-1">
+                            <span>30000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 px-3 d-inline-flex">
+                    <div class="item">
+                        <div class="item_box">
+                            <img src="img/icon-2.png" alt="icon-2">
+                            <span>1700</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 px-3 d-inline-flex">
+                    <div class="item">
+                        <div class="item_box">
+                            <img src="img/icon-3.png" alt="icon-3">
+                            <span>10500</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 px-3 d-inline-flex">
+                    <div class="item">
+                        <div class="item_box">
+                            <img src="img/icon-4.png" alt="icon-4">
+                            <span>Power Elite Author</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Demos-->
+    <section id="demos">
+        <h2>20+</h2>
+    </section>
 
 
 
@@ -185,6 +262,15 @@
         function menuFunction(x) {
             x.classList.toggle("change");
             menu.classList.toggle("menu_open");
+        }
+
+        //video play
+        let play = document.getElementById("video_picture")
+        let video = document.getElementById("video")
+
+        function playVideo(){
+            play.classList.add("off");
+            video.classList.remove("off");
         }
     </script>
 </body>

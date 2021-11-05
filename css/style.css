@@ -125,7 +125,7 @@ header nav ul a:hover::after{
     color: #fe9b06;
 }
 #laptop{
-    position: absolute;
+    position: relative;
     bottom: -150px;
 }
 
@@ -160,6 +160,7 @@ header nav ul a:hover::after{
     }
     #laptop{
         position: static;
+        padding-top: 50px;
     }
     .sticky{
         padding: 10px 0 !important;
@@ -171,7 +172,7 @@ header nav ul a:hover::after{
     background: url("../img/bg-home-eduma-02.png") top center/ cover no-repeat;
     padding: 50px 0 38px;
 }
-#plugin h1{
+#plugin h1, #video_block h1 {
     font-size: 55px;
 }
 #plugin p{
@@ -196,4 +197,98 @@ header nav ul a:hover::after{
 }
 #plugin .plugin_box:hover a{
     opacity: 1;
+}
+
+/*Video_block*/
+#video_block{
+    background: url("../img/bg-home-eduma-03.png") top center/cover no-repeat;
+}
+#video_block .video_box{
+    max-width: 850px;
+    background: #fff;
+    border-radius: 15px;
+    margin: 100px auto;
+    box-shadow: 0 2px 15px rgba(0,0,0,.2);
+    position: relative;
+}
+#video_block #control{
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding: 10px 20px;
+}
+#video_block #control #play{
+    width: 10%;
+    cursor: pointer;
+}
+#video_block #control div:nth-child(2){
+    width: 20%;
+    height: 5px;
+    background: #ffb606;
+}
+#video_block #control div:nth-child(3){
+    width: 60%;
+    height: 5px;
+    background: #58bbb5;
+}
+video{
+    max-width: 100%;
+}
+.off{
+    display: none;
+}
+
+/*Number_one*/
+#video_block #one2{
+    padding: 0 70px;
+}
+#video_block #stars i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/golden-star.png") center/cover no-repeat;
+}
+#video_block .row:nth-child(3){
+    position: relative;
+    top: 100px;
+}
+#video_block .item{
+    width: 100%;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow:  0 3px 10px rgba(0,0,0,.1);
+}
+#video_block .item .item_box{
+    padding: 65px 0;
+    text-align: center;
+}
+#video_block .item .item_box img{
+    display: block;
+    margin: 0 auto;
+}
+#video_block .item .item_box img:hover{
+    transform: scale(1.2);
+    transition: .3s all ease;
+}
+#video_block .item .item_box span{
+    font-size: 30px;
+    display: block;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+
+/*Number_one @media*/
+@media (max-width: 768px) {
+    #video_block h1{
+        font-size: 30px;
+    }
+}
+
+/*Demos*/
+#demos{
+    background: url("../img/bg-home-eduma-4.jpg") top center/ cover no-repeat;
+    padding: 270px 0 520px;
 }
