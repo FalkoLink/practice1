@@ -53,7 +53,7 @@
                         <img src="img/text-bg-eduma.png" id="One" alt="One" class="img-fluid">
                     </div>
                     <div class="col-xxl-4 col-md-7 col-sm-12 text-center text-md-start pt-xl-4">
-                        <p class="text-light fs-3">The best for online education <br><span id="called">WordPress <br id="br"> LMS Theme</span></p>
+                        <p class="text-light fs-3">The best for online education <br><span id="called">WordPress <br class="br"> LMS Theme</span></p>
                         <br>
                         <a href="#" class="btn btn-light bg-transparent text-uppercase mx-auto mx-md-0 fw-bold shadow-lg"><span>buy eduma now</span></a>
                     </div>
@@ -165,9 +165,9 @@
             <div class="row">
                 <div class="col-12">
                     <div id="video_picture" class="video_box p-md-4">
-                        <img src="img/bg-video.jpg" alt="bg-video" class="img-fluid" width="100%">
+                        <img src="img/bg-video.jpg" alt="bg-video" class="img-fluid">
                         <div id="control">
-                            <div id="play" onclick="playVideo()"><img src="img/white-play-icon-png-6.png" alt="Play" width="100%"></div>
+                            <div id="play" onclick="playVideo()"><img src="img/white-play-icon-png-6.png" class="img-fluid" alt="Play"></div>
                             <div></div>
                             <div></div>
                         </div>
@@ -234,9 +234,261 @@
 
 <!--Demos-->
     <section id="demos">
-        <h2>20+</h2>
+        <div class="container">
+            <div class="row">
+                <div id="demos_text" class="col-lg-4 col-md-7">
+                    <h1>20+</h1>
+                    <div class="text-end"><span>included</span></div>
+                    <h2>Premium Demos</h2>
+                    <p>Easy to install and customize</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <ul id="tab">
+                        <li><a class="tablinks active" onclick="openTab(event,'all')">All</a></li>
+                        <li><a class="tablinks" onclick="openTab(event,'university')">University</a></li>
+                        <li><a class="tablinks" onclick="openTab(event,'technology')">Technology</a></li>
+                        <li><a class="tablinks" onclick="openTab(event,'school')">School</a></li>
+                        <li><a class="tablinks" onclick="openTab(event,'academy')">Academy</a></li>
+                        <li><a class="tablinks" onclick="openTab(event,'personal')">Personal</a></li>
+                        <li><a class="tablinks" onclick="openTab(event,'offline')"> Offline</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row tab" id="university">
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-5.jpg" alt="demo-5" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Grad School</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-7.jpg" alt="demo-6" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Languages School</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-8.jpg" alt="demo-6" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Courses Hub</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-9.jpg" alt="demo-6" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Modern University</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row tab" id="technology">
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-4.jpg" alt="demo-4" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Tech Camps</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-6.jpg" alt="demo-6" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Crypto</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row tab" id="school">
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-5.jpg" alt="demo-5" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Grad School</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-7.jpg" alt="demo-6" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Languages School</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-9.jpg" alt="demo-6" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Modern University</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row tab" id="academy">
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-9.jpg" alt="demo-6" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Modern University</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-5.jpg" alt="demo-5" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Grad School</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-8.jpg" alt="demo-6" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Courses Hub</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row tab" id="personal">
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-4.jpg" alt="demo-4" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Tech Camps</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-6.jpg" alt="demo-6" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Crypto</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row tab" id="offline">
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-5.jpg" alt="demo-5" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Grad School</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-9.jpg" alt="demo-6" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Modern University</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row tab" id="all">
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-4.jpg" alt="demo-4" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Tech Camps</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-5.jpg" alt="demo-5" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Grad School</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-6.jpg" alt="demo-6" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Crypto</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-7.jpg" alt="demo-6" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Languages School</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-8.jpg" alt="demo-6" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Courses Hub</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-3">
+                    <div class="card">
+                        <a href="#">
+                            <i class="icon-search-1"></i>
+                            <img src="img/demo-9.jpg" alt="demo-6" class="img-fluid">
+                        </a>
+                        <p><a href="#">Demo Modern University</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="laptop2">
+                <div class="text_box col-lg-5">
+                    <h3>This Education WordPress Theme </h3>
+                    <p>is made with full mobile support</p>
+                </div>
+                <div>
+                    <img src="img/laptop-eduma-02.png" class="img-fluid" alt="laptop2">
+                </div>
+            </div>
+        </div>
     </section>
 
+<!---->
 
 
 <!--Scripts-->
@@ -271,6 +523,24 @@
         function playVideo(){
             play.classList.add("off");
             video.classList.remove("off");
+        }
+
+        //tab open
+        function openTab(evt, tabName) {
+            let i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tab");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabName).style.display = "flex";
+            evt.currentTarget.className += " active";
         }
     </script>
 </body>

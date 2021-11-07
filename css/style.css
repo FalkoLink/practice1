@@ -130,7 +130,7 @@ header nav ul a:hover::after{
 }
 
 /*Header @media*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #One{
         width: 100px;
         position: relative;
@@ -143,7 +143,7 @@ header nav ul a:hover::after{
         height: 50px;
         width: 200px;
     }
-    #br{
+    .br{
         display: none;
     }
     #called{
@@ -281,7 +281,7 @@ video{
 
 
 /*Number_one @media*/
-@media (max-width: 768px) {
+@media screen and (max-width:768px) {
     #video_block h1{
         font-size: 30px;
     }
@@ -291,4 +291,159 @@ video{
 #demos{
     background: url("../img/bg-home-eduma-4.jpg") top center/ cover no-repeat;
     padding: 270px 0 520px;
+}
+#demos #demos_text{
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#demos #demos_text h1{
+    font-size: 150px;
+    font-weight: bolder;
+    text-shadow: 0 3px 3px rgba(0,0,0,.1),0 8px 13px rgba(0,0,0,.1),0 18px 23px rgba(0,0,0,.1);
+    line-height: 0.9em;
+}
+#demos #demos_text span{
+    color: #ffb606;
+    background: #000;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 5px 25px;
+    font-size: 22px;
+}
+#demos #demos_text h2{
+    font-size: 70px;
+    font-weight: bolder;
+    text-shadow: 0 3px 3px rgba(0,0,0,.1),0 8px 13px rgba(0,0,0,.1),0 18px 23px rgba(0,0,0,.1);
+    line-height: 0.9em;
+}
+#demos #demos_text p{
+    font-size: 23px;
+    padding-top: 30px;
+    text-shadow: 0 3px 3px rgba(0,0,0,.1),0 8px 13px rgba(0,0,0,.1),0 18px 23px rgba(0,0,0,.1);
+}
+
+#demos #tab{
+    display: flex;
+    white-space: nowrap;
+    overflow-y: auto;
+    padding: 0 15px 15px;
+}
+#demos #tab li{
+    padding: 0 15px;
+}
+#demos #tab a{
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding-bottom: 7px;
+    position: relative;
+}
+#demos #tab a::after{
+    content: "";
+    display: block;
+    background: #fff;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition: .2s width ease-in;
+}
+#demos #tab a.active::after{
+    width: 100%;
+}
+#demos .tab:not(#all){
+    display: none;
+}
+#demos .card{
+    margin-top: 40px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+    border: 0;
+}
+#demos .card:hover{
+    background: linear-gradient(221deg,#00feaf 0%,#1d8ffa 29%,#01d6ff 100%);
+}
+#demos .card > a{
+    background: #000;
+    border-radius: 15px;
+    position: relative;
+}
+#demos .card img{
+    border-radius: 15px;
+}
+#demos .card a i{
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 2;
+    transition: 0.2s all ease;
+}
+#demos .card:hover a i{
+    opacity: 1;
+    top: 40%;
+}
+#demos .card:hover img{
+    opacity: 0.7;
+}
+#demos .card p{
+    text-align: center;
+    margin: 0;
+    padding: 30px 0 10px;
+    font-size: 1.75rem;
+}
+#demos .card p a{
+    color: #000;
+    font-weight: 600;
+}
+#demos .card:hover p a{
+    color: #fff;
+}
+
+#demos #laptop2{
+    padding-top: 80px;
+    position: absolute;
+    width: 100%;
+}
+#demos #laptop2 .text_box{
+    position: absolute;
+    color: #fff;
+    left: 5%;
+    margin-top: 50px;
+}
+#demos #laptop2 .text_box h3{
+    font-size: 52px;
+    font-weight: bold;
+}
+#demos #laptop2 .text_box p{
+    font-size: 23px;
+    font-weight: 600;
+}
+#demos #laptop2 div:last-child{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*Demos @media*/
+@media screen and (max-width:768px){
+    #demos #demos_text h1{
+        font-size: 120px;
+    }
+    #demos #demos_text h2{
+        font-size: 50px;
+    }
+    #demos #laptop2 .text_box{
+        position: static;
+    }
+    #demos #laptop2 .text_box h3{
+        font-size: 38px;
+    }
 }
